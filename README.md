@@ -1,5 +1,6 @@
 # BookStore in Spring Boot using MongoDB
 
+## [Click for outputs of POSTMAN](https://github.com/OzerBey/BookStore/tree/master/outputsPostman)
 <details>
 
 <summary>POSTMAN reqs</summary>
