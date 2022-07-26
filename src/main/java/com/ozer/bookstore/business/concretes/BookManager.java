@@ -2,10 +2,9 @@ package com.ozer.bookstore.business.concretes;
 
 import com.ozer.bookstore.business.abstracts.BookService;
 import com.ozer.bookstore.business.abstracts.SequenceGeneratorService;
-import com.ozer.bookstore.core.utilities.results.DataResult;
-import com.ozer.bookstore.core.utilities.results.Result;
-import com.ozer.bookstore.core.utilities.results.SuccessDataResult;
-import com.ozer.bookstore.core.utilities.results.SuccessResult;
+import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
+import com.ozer.bookstore.core.utilities.exceptions.BookNotFoundException;
+import com.ozer.bookstore.core.utilities.results.*;
 import com.ozer.bookstore.dataAccess.abstracts.BookDao;
 import com.ozer.bookstore.entities.concretes.Book;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,34 +38,39 @@ public class BookManager implements BookService {
 
     @Override
     public Result deleteById(int id) {
-        this.bookDao.deleteById(id);
-        return new SuccessResult("Book deleted successfully");
+        if (this.bookDao.existsById(id)) {
+            this.bookDao.deleteById(id);
+            return new SuccessResult("Book deleted successfully");
+        } else new BookNotFoundException();
+        return new ErrorResult();
     }
 
     @Override
     public Result update(Book book) {
-        Query query = new Query();
-        query.addCriteria(Criteria.where("id").is(book.getId()));
-        Update update = new Update();
-//        update.set("title", book.getTitle());
-//        update.set("authors", book.getAuthors());
-//        update.set("publish_date", book.getPublishDate());
-//        update.set("pagesNo", book.getPagesNo());
-//        update.set("language", book.getLanguage());
-//        update.set("publisher_id", book.getPublisherId());
-//        update.set("available", book.getStock());
-        bookDao.save(book);
-        return new SuccessResult("Book updated successfully");
+        if (this.bookDao.existsById(book.getId())) {
+            this.bookDao.save(book);
+            return new SuccessResult("Book updated successfully");
+        } else new BookNotFoundException();
+        return new ErrorResult();
     }
 
     @Override
-    public SuccessDataResult<Optional<Book>> getById(int bookId) {
-        return new SuccessDataResult<Optional<Book>>(this.bookDao.findById(bookId), "Book got successfully");
+    public DataResult<Optional<Book>> getById(int bookId) {
+        if (this.bookDao.existsById(bookId)) {
+            return new SuccessDataResult<Optional<Book>>(this.bookDao.findById(bookId), "Book got successfully");
+        } else new BookNotFoundException();
+        return new ErrorDataResult<>();
     }
 
     @Override
     public DataResult<List<Book>> getAll() {
-
         return new SuccessDataResult<List<Book>>(this.bookDao.findAll(), "Books listed successfully");
+    }
+
+    //check book that exists
+    public void isExistsBook(int bookId) throws BookNotFoundException {
+        if (!this.bookDao.existsById(bookId)) {
+            throw new BookNotFoundException();
+        }
     }
 }

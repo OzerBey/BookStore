@@ -16,7 +16,7 @@ public interface BookService {
 
     Result update(Book book);
 
-    SuccessDataResult<Optional<Book>> getById(int bookId);
+    DataResult<Optional<Book>> getById(int bookId);
 
     DataResult<List<Book>> getAll();
 }

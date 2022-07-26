@@ -43,7 +43,7 @@ public class BooksController {
 
 
     @GetMapping("getById")
-    public SuccessDataResult<Optional<Book>> getBookById(@RequestParam(name = "id") int id) {
+    public DataResult<Optional<Book>> getBookById(@RequestParam(name = "id") int id) {
         return this.bookService.getById(id);
     }
 
