@@ -28,7 +28,7 @@ public class AuthorManager implements AuthorService {
     public Result add(Author author) {
         author.setId(sequenceGeneratorService.getSequenceNumber(author.SEQUENCE_NAME));
         this.authorDao.save(author);
-        return new SuccessResult("added author successfully");
+        return new SuccessResult("Author added successfully");
     }
 
     @Override
