@@ -1,0 +1,346 @@
+{
+  "success": true,
+  "message": "All author listed",
+  "data": [
+    {
+      "id": 2,
+      "name": "Halid Ziya Uşaklıgil",
+      "bookCount": 96,
+      "books": [
+        {
+          "id": 15,
+          "title": "Aşk-ı Memnu",
+          "authors": [
+            "Halit Ziya Uşaklıgil"
+          ],
+          "publishDate": "25.07.1998",
+          "pagesNo": 500,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 22
+        },
+        {
+          "id": 16,
+          "title": "Mai ve Siyah",
+          "authors": [
+            "Halit Ziya Uşaklıgil"
+          ],
+          "publishDate": "25.07.1998",
+          "pagesNo": 500,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 13
+        }
+      ],
+      "address": "www.halidziyausakligil.com"
+    },
+    {
+      "id": 3,
+      "name": "Yaşar Kemal",
+      "bookCount": 96,
+      "books": [
+        {
+          "id": 1,
+          "title": "Ince Memed",
+          "authors": [
+            "Yaşar Kemal"
+          ],
+          "publishDate": "15.05.1998",
+          "pagesNo": 233,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 50
+        },
+        {
+          "id": 20,
+          "title": "Orta Direk",
+          "authors": [
+            "Yaşar Kemal"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 350,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 100
+        },
+        {
+          "id": 21,
+          "title": "Fırat Suyu Kan Akıyor Baksana",
+          "authors": [
+            "Yaşar Kemal"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 455,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 7
+        },
+        {
+          "id": 22,
+          "title": "Yer Demir Gök Bakır",
+          "authors": [
+            "Yaşar Kemal"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 379,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 44
+        }
+      ],
+      "address": "www.yasarkemal.com"
+    },
+    {
+      "id": 4,
+      "name": "Ahmet Hamdi Tanpınar",
+      "bookCount": 83,
+      "books": [
+        {
+          "id": 5,
+          "title": "Huzur",
+          "authors": [
+            "Ahmet Hamdi Tanpınar"
+          ],
+          "publishDate": "22.05.2000",
+          "pagesNo": 256,
+          "language": "Turkish",
+          "publisherId": "2",
+          "stock": 100
+        },
+        {
+          "id": 7,
+          "title": "Saatleri Ayarlama Enstitüsü",
+          "authors": [
+            "Ahmet Hamdi Tanpınar"
+          ],
+          "publishDate": "22.05.2012",
+          "pagesNo": 500,
+          "language": "Turkish",
+          "publisherId": "4",
+          "stock": 3
+        }
+      ],
+      "address": "www.ahmethamditanpinar.com"
+    },
+    {
+      "id": 5,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 6,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 7,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 8,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 9,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 10,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 11,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 12,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 13,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 14,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    },
+    {
+      "id": 15,
+      "name": "Halide Edip Adıvar",
+      "bookCount": 34,
+      "books": [
+        {
+          "id": 0,
+          "title": "Ateşten Gömlek",
+          "authors": [
+            "Halide Edip Adıvar"
+          ],
+          "publishDate": "26.07.2022",
+          "pagesNo": 400,
+          "language": "Turkish",
+          "publisherId": "3",
+          "stock": 100
+        }
+      ],
+      "address": "www.halideedipadivar.com"
+    }
+  ]
+}

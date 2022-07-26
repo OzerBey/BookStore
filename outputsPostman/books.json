@@ -1,0 +1,426 @@
+{
+  "success": true,
+  "message": "Books listed successfully",
+  "data": [
+    {
+      "id": 2,
+      "title": "Tutunamayanlar",
+      "authors": [
+        "Oğuz Atay"
+      ],
+      "publishDate": "21.07.1998",
+      "pagesNo": 104,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 20
+    },
+    {
+      "id": 3,
+      "title": "Aylak Adam",
+      "authors": [
+        "Yusuf Atılgan"
+      ],
+      "publishDate": "08.12.2013",
+      "pagesNo": 657,
+      "language": "Turkish",
+      "publisherId": "1",
+      "stock": 64
+    },
+    {
+      "id": 4,
+      "title": "Kara Kitap",
+      "authors": [
+        "Orhan Pamuk"
+      ],
+      "publishDate": "12.03.1995",
+      "pagesNo": 657,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "title": "Huzur",
+      "authors": [
+        "Ahmet Hamdi Tanpınar"
+      ],
+      "publishDate": "22.05.2000",
+      "pagesNo": 256,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 100
+    },
+    {
+      "id": 6,
+      "title": "Bereketli Topraklar Üzerinde",
+      "authors": [
+        "Orhan Kemal"
+      ],
+      "publishDate": "23.06.2001",
+      "pagesNo": 355,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 5
+    },
+    {
+      "id": 7,
+      "title": "Saatleri Ayarlama Enstitüsü",
+      "authors": [
+        "Ahmet Hamdi Tanpınar"
+      ],
+      "publishDate": "22.05.2012",
+      "pagesNo": 500,
+      "language": "Turkish",
+      "publisherId": "4",
+      "stock": 3
+    },
+    {
+      "id": 8,
+      "title": "Tehlikeli Oyunlar",
+      "authors": [
+        "Oğuz Atay"
+      ],
+      "publishDate": "15.08.2001",
+      "pagesNo": 300,
+      "language": "Turkish",
+      "publisherId": "1",
+      "stock": 23
+    },
+    {
+      "id": 9,
+      "title": "Çalıkuşu",
+      "authors": [
+        "Reşat Nuri Güntekin"
+      ],
+      "publishDate": "28.02.2020",
+      "pagesNo": 145,
+      "language": "Turkish",
+      "publisherId": "4",
+      "stock": 1
+    },
+    {
+      "id": 10,
+      "title": "9. Hariciye Koğuşu",
+      "authors": [
+        "Peyami Safa"
+      ],
+      "publishDate": "22.05.1980",
+      "pagesNo": 430,
+      "language": "Turkish",
+      "publisherId": "1",
+      "stock": 20
+    },
+    {
+      "id": 11,
+      "title": "Kızıl",
+      "authors": [
+        "Stefen Zweig"
+      ],
+      "publishDate": "15.03.2022",
+      "pagesNo": 140,
+      "language": "Turkish",
+      "publisherId": "1",
+      "stock": 6
+    },
+    {
+      "id": 13,
+      "title": "Devlet Ana",
+      "authors": [
+        "Kemal Tahir"
+      ],
+      "publishDate": "24.07.2022",
+      "pagesNo": 250,
+      "language": "Turkish",
+      "publisherId": "1",
+      "stock": 324
+    },
+    {
+      "id": 14,
+      "title": "Kuyucaklı Yusuf",
+      "authors": [
+        "Sabahattin Ali"
+      ],
+      "publishDate": "24.07.2022",
+      "pagesNo": 455,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 4
+    },
+    {
+      "id": 15,
+      "title": "Aşk-ı Memnu",
+      "authors": [
+        "Halit Ziya Uşaklıgil"
+      ],
+      "publishDate": "25.07.1998",
+      "pagesNo": 500,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 22
+    },
+    {
+      "id": 16,
+      "title": "Mai ve Siyah",
+      "authors": [
+        "Halit Ziya Uşaklıgil"
+      ],
+      "publishDate": "25.07.1998",
+      "pagesNo": 500,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 13
+    },
+    {
+      "id": 17,
+      "title": "Yaban",
+      "authors": [
+        "Yakup Kadri Karaosmanoğlu"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 450,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 5
+    },
+    {
+      "id": 18,
+      "title": "Oyunlarla Yaşayanlar",
+      "authors": [
+        "Oğuz Atay"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 450,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 5
+    },
+    {
+      "id": 19,
+      "title": "Korkuyu Beklerken",
+      "authors": [
+        "Oğuz Atay"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 350,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 19
+    },
+    {
+      "id": 20,
+      "title": "Orta Direk",
+      "authors": [
+        "Yaşar Kemal"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 350,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 100
+    },
+    {
+      "id": 21,
+      "title": "Fırat Suyu Kan Akıyor Baksana",
+      "authors": [
+        "Yaşar Kemal"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 455,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 7
+    },
+    {
+      "id": 22,
+      "title": "Yer Demir Gök Bakır",
+      "authors": [
+        "Yaşar Kemal"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 379,
+      "language": "Turkish",
+      "publisherId": "2",
+      "stock": 44
+    },
+    {
+      "id": 23,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 24,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 25,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 26,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 27,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 28,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 29,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 30,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 31,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 32,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 33,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 34,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 35,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 36,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 37,
+      "title": "Ateşten Gömlek",
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "message": "All users listed",
+  "data": [
+    {
+      "id": 2,
+      "name": "Yasin Özer",
+      "email": "yasinozer@mail.com",
+      "username": "ozerBey",
+      "password": "pa55word@"
+    },
+    {
+      "id": 3,
+      "name": "Zeynep Nur",
+      "email": "zeynapp@mail.com",
+      "username": "zeynApp",
+      "password": "pa55word@app"
+    },
+    {
+      "id": 4,
+      "name": "Chengiz Khan",
+      "email": "chengizkhan@mail.com",
+      "username": "chengizKhan",
+      "password": "pa55word@khan"
+    },
+    {
+      "id": 5,
+      "name": "Ceysin",
+      "email": "ceysin@mail.com",
+      "username": "ceySin",
+      "password": "pa55word@ceysin"
+    },
+    {
+      "id": 6,
+      "name": "Ahmet Bingboğa",
+      "email": "abinboga@mail.com",
+      "username": "abinboga",
+      "password": "pa55word@abinboga"
+    },
+    {
+      "id": 7,
+      "name": "Barış Akarsu",
+      "email": "barisakarsu@mail.com",
+      "username": "bakarsu",
+      "password": "pa55word@bakarsu"
+    },
+    {
+      "id": 8,
+      "name": "Barış Manço",
+      "email": "barismanco@mail.com",
+      "username": "bmanco",
+      "password": "pa55word@bmanco"
+    }
+  ]
+}
