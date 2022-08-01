@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "message": "All photos listed",
+  "data": [
+    {
+      "id": 1,
+      "title": "first photo",
+      "photoPath": "https://user-images.githubusercontent.com/49093196/182243348-91b6bf35-cb00-4b4a-80ab-a00f73695dfa.png"
+    },
+    {
+      "id": 2,
+      "title": "tutunamayanlar",
+      "photoPath": "https://user-images.githubusercontent.com/49093196/182245679-15787c87-c3a3-4b96-bbda-8ed58740d6ef.png"
+    },
+    {
+      "id": 3,
+      "title": "aylak adam",
+      "photoPath": "https://user-images.githubusercontent.com/49093196/182246507-d05b8737-40f8-40bc-b37f-d87cebfdef36.png"
+    }
+  ]
+}
