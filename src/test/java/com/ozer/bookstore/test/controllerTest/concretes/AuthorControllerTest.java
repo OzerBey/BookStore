@@ -1,12 +1,11 @@
-package com.ozer.bookstore.test.testController.concretes;
+package com.ozer.bookstore.test.controllerTest.concretes;
 
 import com.ozer.bookstore.business.abstracts.AuthorService;
 import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
 import com.ozer.bookstore.core.utilities.results.SuccessDataResult;
 import com.ozer.bookstore.entities.concretes.Author;
 import com.ozer.bookstore.entities.concretes.Book;
-import com.ozer.bookstore.test.testController.abstracts.AuthorCrudTest;
-import lombok.extern.java.Log;
+import com.ozer.bookstore.test.controllerTest.abstracts.AuthorCrudTest;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

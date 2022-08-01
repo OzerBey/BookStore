@@ -1,4 +1,4 @@
-package com.ozer.bookstore.test.testController.abstracts;
+package com.ozer.bookstore.test.controllerTest.abstracts;
 
 public interface BookCrudTest {
     // Test for book's CRUD operations //

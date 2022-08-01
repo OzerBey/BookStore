@@ -1,10 +1,10 @@
-package com.ozer.bookstore.test.testController.concretes;
+package com.ozer.bookstore.test.controllerTest.concretes;
 
 import com.ozer.bookstore.business.abstracts.UserService;
 import com.ozer.bookstore.core.utilities.exceptions.UserNotFoundException;
 import com.ozer.bookstore.core.utilities.results.SuccessDataResult;
 import com.ozer.bookstore.entities.concretes.User;
-import com.ozer.bookstore.test.testController.abstracts.UserCrudTest;
+import com.ozer.bookstore.test.controllerTest.abstracts.UserCrudTest;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

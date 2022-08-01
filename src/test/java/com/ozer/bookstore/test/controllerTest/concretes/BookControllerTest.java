@@ -1,9 +1,9 @@
-package com.ozer.bookstore.test.testController.concretes;
+package com.ozer.bookstore.test.controllerTest.concretes;
 
 import com.ozer.bookstore.business.abstracts.BookService;
 import com.ozer.bookstore.core.utilities.results.SuccessDataResult;
 import com.ozer.bookstore.entities.concretes.Book;
-import com.ozer.bookstore.test.testController.abstracts.BookCrudTest;
+import com.ozer.bookstore.test.controllerTest.abstracts.BookCrudTest;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

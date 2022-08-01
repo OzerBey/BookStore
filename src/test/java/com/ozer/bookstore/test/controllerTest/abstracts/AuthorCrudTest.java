@@ -1,4 +1,4 @@
-package com.ozer.bookstore.test.testController.abstracts;
+package com.ozer.bookstore.test.controllerTest.abstracts;
 
 import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
 
