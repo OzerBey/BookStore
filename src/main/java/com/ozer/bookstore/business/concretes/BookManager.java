@@ -7,6 +7,7 @@ import com.ozer.bookstore.core.utilities.exceptions.BookNotFoundException;
 import com.ozer.bookstore.core.utilities.results.*;
 import com.ozer.bookstore.dataAccess.abstracts.BookDao;
 import com.ozer.bookstore.entities.concretes.Book;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Log4j2
 public class BookManager implements BookService {
 
     private BookDao bookDao;
@@ -70,6 +72,7 @@ public class BookManager implements BookService {
     //check book that exists
     public void isExistsBook(int bookId) throws BookNotFoundException {
         if (!this.bookDao.existsById(bookId)) {
+            log.error("BookNotFound!!");
             throw new BookNotFoundException();
         }
     }

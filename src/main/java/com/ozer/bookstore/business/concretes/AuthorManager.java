@@ -6,6 +6,7 @@ import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
 import com.ozer.bookstore.core.utilities.results.*;
 import com.ozer.bookstore.dataAccess.abstracts.AuthorDao;
 import com.ozer.bookstore.entities.concretes.Author;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Log4j2
 public class AuthorManager implements AuthorService {
 
     private AuthorDao authorDao;
@@ -68,6 +70,7 @@ public class AuthorManager implements AuthorService {
     public void isExistsAuthor(int authorId) throws AuthorNotFoundException {
         if (!this.authorDao.existsById(authorId)) {
             System.err.println("not found author");
+            log.error("AuthorNotFound!!");
             throw new AuthorNotFoundException();
         }
     }

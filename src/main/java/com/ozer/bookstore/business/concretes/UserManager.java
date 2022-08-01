@@ -9,6 +9,7 @@ import com.ozer.bookstore.dataAccess.abstracts.AuthorDao;
 import com.ozer.bookstore.dataAccess.abstracts.UserDao;
 import com.ozer.bookstore.entities.concretes.Author;
 import com.ozer.bookstore.entities.concretes.User;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Log4j2
 public class UserManager implements UserService {
 
     private UserDao userDao;
@@ -40,7 +42,7 @@ public class UserManager implements UserService {
             isExistsUser(id);
             this.userDao.deleteById(id);
             return new SuccessResult("Author deleted from db successfully");
-        } else new AuthorNotFoundException();
+        } else new UserNotFoundException();
         return new ErrorResult();
     }
 
@@ -50,20 +52,23 @@ public class UserManager implements UserService {
             isExistsUser(user.getId());
             this.userDao.save(user);
             return new SuccessResult(user.getName() + " updated successfully");
-        } else new AuthorNotFoundException();
+        } else new UserNotFoundException();
+
         return new ErrorResult();
     }
 
     @Override
     public DataResult<Optional<User>> getById(int userId) {
         if (this.userDao.existsById(userId)) {
-            return new SuccessDataResult<>(this.userDao.findById(userId), "user listed");
+            return new SuccessDataResult<Optional<User>>(this.userDao.findById(userId), "user listed");
         } else new UserNotFoundException();
+
         return new ErrorDataResult<Optional<User>>();
     }
 
     @Override
     public DataResult<List<User>> getAll() {
+        log.warn("All users listed");
         return new SuccessDataResult<>(this.userDao.findAll(), "All users listed");
 
     }
@@ -71,6 +76,7 @@ public class UserManager implements UserService {
     //check user
     public void isExistsUser(int userId) throws UserNotFoundException {
         if (!this.userDao.existsById(userId)) {
+            log.error("UserNotFound!!");
             throw new UserNotFoundException();
         }
     }
