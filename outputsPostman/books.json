@@ -5,6 +5,7 @@
     {
       "id": 2,
       "title": "Tutunamayanlar",
+      "photoId": 2,
       "authors": [
         "Oğuz Atay"
       ],
@@ -17,6 +18,7 @@
     {
       "id": 3,
       "title": "Aylak Adam",
+      "photoId": 3,
       "authors": [
         "Yusuf Atılgan"
       ],
@@ -29,6 +31,7 @@
     {
       "id": 4,
       "title": "Kara Kitap",
+      "photoId": 0,
       "authors": [
         "Orhan Pamuk"
       ],
@@ -41,6 +44,7 @@
     {
       "id": 5,
       "title": "Huzur",
+      "photoId": 0,
       "authors": [
         "Ahmet Hamdi Tanpınar"
       ],
@@ -53,6 +57,7 @@
     {
       "id": 6,
       "title": "Bereketli Topraklar Üzerinde",
+      "photoId": 0,
       "authors": [
         "Orhan Kemal"
       ],
@@ -65,6 +70,7 @@
     {
       "id": 7,
       "title": "Saatleri Ayarlama Enstitüsü",
+      "photoId": 0,
       "authors": [
         "Ahmet Hamdi Tanpınar"
       ],
@@ -77,6 +83,7 @@
     {
       "id": 8,
       "title": "Tehlikeli Oyunlar",
+      "photoId": 0,
       "authors": [
         "Oğuz Atay"
       ],
@@ -89,6 +96,7 @@
     {
       "id": 9,
       "title": "Çalıkuşu",
+      "photoId": 0,
       "authors": [
         "Reşat Nuri Güntekin"
       ],
@@ -101,6 +109,7 @@
     {
       "id": 10,
       "title": "9. Hariciye Koğuşu",
+      "photoId": 0,
       "authors": [
         "Peyami Safa"
       ],
@@ -113,6 +122,7 @@
     {
       "id": 11,
       "title": "Kızıl",
+      "photoId": 0,
       "authors": [
         "Stefen Zweig"
       ],
@@ -125,6 +135,7 @@
     {
       "id": 13,
       "title": "Devlet Ana",
+      "photoId": 0,
       "authors": [
         "Kemal Tahir"
       ],
@@ -137,6 +148,7 @@
     {
       "id": 14,
       "title": "Kuyucaklı Yusuf",
+      "photoId": 0,
       "authors": [
         "Sabahattin Ali"
       ],
@@ -149,6 +161,7 @@
     {
       "id": 15,
       "title": "Aşk-ı Memnu",
+      "photoId": 0,
       "authors": [
         "Halit Ziya Uşaklıgil"
       ],
@@ -161,6 +174,7 @@
     {
       "id": 16,
       "title": "Mai ve Siyah",
+      "photoId": 0,
       "authors": [
         "Halit Ziya Uşaklıgil"
       ],
@@ -173,6 +187,7 @@
     {
       "id": 17,
       "title": "Yaban",
+      "photoId": 0,
       "authors": [
         "Yakup Kadri Karaosmanoğlu"
       ],
@@ -185,6 +200,7 @@
     {
       "id": 18,
       "title": "Oyunlarla Yaşayanlar",
+      "photoId": 0,
       "authors": [
         "Oğuz Atay"
       ],
@@ -197,6 +213,7 @@
     {
       "id": 19,
       "title": "Korkuyu Beklerken",
+      "photoId": 0,
       "authors": [
         "Oğuz Atay"
       ],
@@ -209,6 +226,7 @@
     {
       "id": 20,
       "title": "Orta Direk",
+      "photoId": 0,
       "authors": [
         "Yaşar Kemal"
       ],
@@ -221,6 +239,7 @@
     {
       "id": 21,
       "title": "Fırat Suyu Kan Akıyor Baksana",
+      "photoId": 0,
       "authors": [
         "Yaşar Kemal"
       ],
@@ -233,6 +252,7 @@
     {
       "id": 22,
       "title": "Yer Demir Gök Bakır",
+      "photoId": 0,
       "authors": [
         "Yaşar Kemal"
       ],
@@ -245,6 +265,7 @@
     {
       "id": 23,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -257,6 +278,7 @@
     {
       "id": 24,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -269,6 +291,7 @@
     {
       "id": 25,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -281,6 +304,7 @@
     {
       "id": 26,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -293,6 +317,7 @@
     {
       "id": 27,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -305,6 +330,7 @@
     {
       "id": 28,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -317,6 +343,7 @@
     {
       "id": 29,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -329,6 +356,7 @@
     {
       "id": 30,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -341,6 +369,7 @@
     {
       "id": 31,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -353,6 +382,7 @@
     {
       "id": 32,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -365,6 +395,7 @@
     {
       "id": 33,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -377,6 +408,7 @@
     {
       "id": 34,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -389,6 +421,7 @@
     {
       "id": 35,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -401,6 +434,7 @@
     {
       "id": 36,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],
@@ -413,6 +447,163 @@
     {
       "id": 37,
       "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 38,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 39,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 40,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 41,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 42,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 43,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 44,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 45,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 46,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 47,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 48,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
+      "authors": [
+        "Halide Edip Adıvar"
+      ],
+      "publishDate": "26.07.2022",
+      "pagesNo": 400,
+      "language": "Turkish",
+      "publisherId": "3",
+      "stock": 100
+    },
+    {
+      "id": 49,
+      "title": "Ateşten Gömlek",
+      "photoId": 0,
       "authors": [
         "Halide Edip Adıvar"
       ],

@@ -1,6 +1,6 @@
 package com.ozer.bookstore.entities.concretes;
 
-import com.ozer.bookstore.entities.abstracts.IEntity;
+import com.ozer.bookstore.core.abstracts.IEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.ozer.bookstore.entities.concretes;
 
-import com.ozer.bookstore.entities.abstracts.IEntity;
+import com.ozer.bookstore.core.abstracts.IEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-//@Document(collection = "book")
+//@Document(collection = "books")
 public class Book implements IEntity {
 
     @Transient // veri deposu motoru bu alanı okumaz
@@ -27,11 +27,15 @@ public class Book implements IEntity {
 
     private String title;
 
+    @Field("photo_id")
+    private int photoId;
+
     @Field("author") // field mongoDb tarafında bu alan adını yapılandırmak için kullanılır
     private List<String> authors;
 
     @Field("published_date")
     private String publishDate;
+
 
     @Field("pages")
     private int pagesNo;
