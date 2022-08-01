@@ -1,19 +1,23 @@
 package com.ozer.bookstore;
 
+import com.ozer.bookstore.api.controllers.UsersController;
 import com.ozer.bookstore.business.abstracts.AuthorService;
 import com.ozer.bookstore.business.abstracts.BookService;
 import com.ozer.bookstore.business.abstracts.UserService;
 import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
 import com.ozer.bookstore.core.utilities.exceptions.UserNotFoundException;
-import com.ozer.bookstore.core.utilities.results.DataResult;
 import com.ozer.bookstore.core.utilities.results.SuccessDataResult;
+import com.ozer.bookstore.dataAccess.abstracts.UserDao;
 import com.ozer.bookstore.entities.concretes.Author;
 import com.ozer.bookstore.entities.concretes.Book;
 import com.ozer.bookstore.entities.concretes.User;
-import com.ozer.bookstore.test.TestCrud;
-import org.junit.jupiter.api.Test;
+import com.ozer.bookstore.test.GeneralTestCrud;
+import lombok.extern.log4j.Log4j2;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,19 +25,28 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
 
 @SpringBootTest
-class BookStoreApplicationTests implements TestCrud {
+@Log4j2
+class BookStoreApplicationTests implements GeneralTestCrud {
 
     @Autowired
     BookService bookService;
     @Autowired
     AuthorService authorService;
-
     @Autowired
     UserService userService;
 
-
     @Test
     void contextLoads() {
+    }
+
+    @BeforeEach
+    public void runBeforeTest() {
+        System.err.println("called runBeforeTest method before each other");
+    }
+
+    @AfterEach
+    public void runAfterAllTests() {
+        System.err.println("this method called runAfterAllTests after each other");
     }
 
     // Tests for books //
@@ -64,24 +77,39 @@ class BookStoreApplicationTests implements TestCrud {
     //GetById
     @Test
     @Override
-    public DataResult<Optional<Book>> testBookGetById() {
-        Optional<Book> bookEntity = bookService.getById(1).getData();
+    public void testBookGetById() {
+        Optional<Book> bookEntity = bookService.getById(2).getData();
 
-        //Is exists title as 'Ateşten Gömlek' or not
-        System.err.println("actual value is " + bookEntity.get().getTitle());
-        assertEquals("Ateşten Gömlek", bookEntity.get().getTitle());
-        return new SuccessDataResult<>();
+        //Is exists title as 'Tutunamayanlar' or not
+        System.err.println("actual value is " + bookEntity.get().getTitle()); // test current book entity
+        String titleOfBook = "Tutunamayanlar";
+        isBookAvailable(bookEntity.get().getId());
+        assertEquals(titleOfBook, bookEntity.get().getTitle());
+
+    }
+    // check book by its id
+
+    public boolean isBookAvailable(int bookId) {
+        boolean result = false;
+        List<Book> bookList = bookService.getAll().getData();
+        for (Book book : bookList) {
+            if (book.getId() == bookId) {
+                result = true;
+            }
+        }
+        return result;
     }
 
     //UPDATE
     @Test
     @Override
     public void testBookUpdate() {
-        Optional<Book> bookEntity = bookService.getById(1).getData();
-        bookEntity.get().setTitle("Ateşten Gömlek title from test");
+        Optional<Book> bookEntity = bookService.getById(4).getData();
+        bookEntity.get().setTitle("Kara Kitap changed by test class");
 
-        // bookService.update(bookEntity);
-        assertEquals("Ateşten Gömlek title from test", bookService.getById(1).getData());
+//        bookService.update(bookEntity); // i disabled this process to not change my real data
+        // assertEquals("Kara Kitap changed by test class", bookService.getById(4).getData());
+        assertEquals("Kara Kitap changed by test class", bookEntity.get().getTitle());
     }
 
     //DELETE
@@ -106,29 +134,34 @@ class BookStoreApplicationTests implements TestCrud {
 
         Author authorEntity = Author.builder().name("Halide Edip Adıvar").bookCount(34).books(books).address("www.halideedipadivar.com").build();
         authorService.add(authorEntity); // save on db
+        assertNotNull(authorService.getById(authorEntity.getId()).getData());
     }
 
     //GetById
     @Test
     @Override
-    public DataResult<Optional<Book>> testAuthorGetById() {
-        Optional<Author> authorEntity = authorService.getById(1).getData();
+    public void testAuthorGetById() {
+        Optional<Author> authorEntity = authorService.getById(2).getData();
 
-        //Is exists name as 'Oğuz Atay' or not
-        assertEquals("Oğuz Atay", authorEntity.get().getName());
-        return new SuccessDataResult<>();
+        //Is exists name as 'Halid Ziya Uşaklıgil' or not
+        String expectedName = "Halid Ziya Uşaklıgil";
+        assertEquals(expectedName, authorEntity.get().getName());
     }
 
     //UPDATE
     @Test
     @Override
     public void testAuthorUpdate() {
-        Optional<Author> authorEntity = authorService.getById(1).getData();
-        authorEntity.get().setName("Halide Edip Adıvar title from test");
+        Optional<Author> authorEntity = authorService.getById(5).getData();
+        String name = "Halide Edip Adıvar title changed by test class";
+        authorEntity.get().setName(name);
 
-        // bookService.update(bookEntity);
-        assertNull(bookService.getById(1).getData());
+        // authorService.update(bookEntity); // i disabled this process to not change my real data
+        // assertEquals(name, authorService.getById(5).getData());
+        assertEquals(name, authorEntity.get().getName());
+
     }
+
 
     //LIST
     @Test
@@ -138,7 +171,6 @@ class BookStoreApplicationTests implements TestCrud {
 
         //if list greater than 0 bookList is exists and return it
         assertThat(authorList).as(String.valueOf(true));
-
     }
 
     //DELETE
@@ -156,28 +188,36 @@ class BookStoreApplicationTests implements TestCrud {
     @Override
     public void testUserCreate() {
         User userEntity = User.builder().name("Yasin Özer").email("yasinozer@mail.com").username("ozerBey").password("pa55word@").build();
+        if (!isPasswordValid(userEntity.getPassword())) {
+            log.error("User's password must be greater than 4 character");
+        }
         userService.add(userEntity); // save on db
+        assertNotNull(userService.getById(userEntity.getId()).getData());
+    }
+
+    public boolean isPasswordValid(String password) {
+        return password.length() < 4 ? false : true;
     }
 
     @Test
     @Override
-    public DataResult<Optional<Book>> testUserGetById() {
-        Optional<User> userEntity = userService.getById(1).getData();
+    public void testUserGetById() {
+        Optional<User> userEntity = userService.getById(2).getData();
 
-        //Is exists name as 'Yasin Ozer' or not
-        assertEquals("Yasin Ozer", userEntity.get().getName());
-        return new SuccessDataResult<>();
-
+        //Is exists name as 'Yasin Özer' or not
+        assertEquals("Yasin Özer", userEntity.get().getName());
     }
 
     @Test
     @Override
     public void testUserUpdate() {
-        Optional<User> userEntity = userService.getById(1).getData();
-        userEntity.get().setName("Yasin Ozer from test");
+        Optional<User> userEntity = userService.getById(6).getData();
+        String name = "Barış Binboğan name changed by testClass";
+        userEntity.get().setName(name);
 
-//        userService.update(userEntity);
-        assertNull(bookService.getById(1).getData());
+//        userService.update(userEntity); // i disabled this process
+        log.info("User's infos are same");
+        assertEquals(name, userEntity.get().getName());
     }
 
     @Test

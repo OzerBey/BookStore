@@ -2,12 +2,8 @@ package com.ozer.bookstore.test;
 
 import com.ozer.bookstore.core.utilities.exceptions.AuthorNotFoundException;
 import com.ozer.bookstore.core.utilities.exceptions.UserNotFoundException;
-import com.ozer.bookstore.core.utilities.results.DataResult;
-import com.ozer.bookstore.entities.concretes.Book;
 
-import java.util.Optional;
-
-public interface TestCrud {
+public interface GeneralTestCrud {
 
     // Test for book's CRUD operations //
     void testBookCreate();
@@ -15,7 +11,7 @@ public interface TestCrud {
     void testBookUpdate();
 
 
-    DataResult<Optional<Book>> testBookGetById();
+    void testBookGetById();
 
     void testBookList();
 
@@ -28,7 +24,7 @@ public interface TestCrud {
 
     void testAuthorUpdate();
 
-    DataResult<Optional<Book>> testAuthorGetById();
+    void testAuthorGetById();
 
     void testAuthorList();
 
@@ -41,7 +37,7 @@ public interface TestCrud {
 
     void testUserUpdate();
 
-    DataResult<Optional<Book>> testUserGetById();
+    void testUserGetById();
 
     void testUserList();
 
