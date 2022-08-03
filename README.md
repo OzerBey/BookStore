@@ -1,5 +1,19 @@
 # BookStore in Spring Boot using MongoDB
 
+![](https://img.shields.io/badge/java-v17-green)
+![](https://img.shields.io/badge/spring--boot-v2.7.2-green)
+![](https://img.shields.io/badge/swagger-v2.92-green)
+![](https://img.shields.io/badge/tests-16%2F16%20passed-green)
+## *Spring Boot Project*
+- *Java 17*
+- *MongoDB*
+- *Spring*
+   - *Boot*
+   - *MVC*
+   - *Data*
+   - *Security*
+   - *Rest*
+
 ## [Click for outputs of POSTMAN](https://github.com/OzerBey/BookStore/tree/master/outputsPostman)
 
 <hr>
