@@ -1,0 +1,12 @@
+spring:
+  security:
+    user:
+      name: ozerBey
+      password: pa55word@
+  data:
+    mongodb:
+      database: BookStore
+      port: '27017'
+      host: localhost
+server:
+  port: '9090'
