@@ -1,8 +1,8 @@
 spring:
   security:
-    user:
-      name: ozerBey
-      password: pa55word@
+  #    user:
+  #      name: ozerBey
+  #      password: pa55word@
   data:
     mongodb:
       database: BookStore
